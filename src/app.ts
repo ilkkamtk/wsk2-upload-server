@@ -22,6 +22,7 @@ app.get<{}, MessageResponse>('/', (req, res) => {
 });
 
 app.use('/api/v1', api);
+app.use('/uploads', express.static('uploads'));
 
 app.use(notFound);
 app.use(errorHandler);

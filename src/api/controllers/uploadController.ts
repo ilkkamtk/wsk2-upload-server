@@ -16,7 +16,7 @@ const uploadPost = async (
     const response = {
       message: 'file uploaded',
       data: {
-        filename: req.file.filename,
+        image: req.file.filename,
         thumbnail: req.file.filename + '-thumbnail',
         location: res.locals.coords,
       },
